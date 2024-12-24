@@ -1,0 +1,5 @@
+docker run -it -v ~/docker_mount:/docker_mount node:18 /bin/bash
+
+npm install --global @gltf-transform/cli
+
+gltf-transform optimize --compress draco --texture-compress webp ./CeresFigurine.glb ./output.glb
